@@ -1,0 +1,238 @@
+extends includes/base.pug
+
+block body 
+	main#main(data-aos='fade', data-aos-delay='1500')
+		.page-header.d-flex.align-items-center
+			.container.position-relative
+				.row.d-flex.justify-content-center
+					.col-lg-6.text-center
+						h2 妃悅足湯
+						p 為尊榮的您搭配最專業調理保健師＆芳療師針對您設計獨一無二的課程，創造美麗與安心感受，為每一位尊貴的您創造不凡體驗。
+	section#contact.contact
+		.container
+			.row.gy-4.justify-content-center.icon
+				.col-lg-3
+					.info-item.d-flex
+						i.bi.bi-geo-alt.flex-shrink-0
+						div
+							h4 台北總店:
+							p 111台北市士林區菁山路101巷9999號
+				.col-lg-3
+					.info-item.d-flex
+						i.bi.bi-geo-alt.flex-shrink-0
+						div
+							h4 高雄分店:
+							p 804高雄市鼓山區忠義路9999號
+				.col-lg-3
+					.info-item.d-flex
+						i.bi.bi-envelope.flex-shrink-0
+						div
+							h4 Email:
+							p fyvenus@gmail.com
+				
+
+			.row.justify-content-center.mt-4
+				.col-lg-9
+					form.php-email-form(name="form1" action='forms/conn.php' method='POST')
+						.row
+							.col-md-6.form-group
+								input#name.form-control(type='text' name='fy_name' placeholder='姓名' required='')
+							.col-md-6.form-group.sex
+								.form-check.form-check-inline
+									input#inlineRadio1.form-check-input(type='radio' name='inlineRadioOptions' value='option1')
+									label.form-check-label(for='inlineRadio1') 先生
+								.form-check.form-check-inline
+									input#inlineRadio2.form-check-input(type='radio' name='inlineRadioOptions' value='option2')
+									label.form-check-label(for='inlineRadio2') 小姐
+							.col-md-6.form-group.mt-md-0
+								input#phone.form-control(type='tel' name='fy_tel' placeholder='電話' required='')
+							.col-md-6.form-group.mt-md-0
+								input#email.form-control(type='email' name='fy_email' placeholder='Email' required='')
+							
+							.form-group.col-md-6
+								.dropdown
+									button#dropdownMenuButton2.btn.btn-secondary.dropdown-toggle.w-100.select-items(type='button' name='fy_class' data-bs-toggle='dropdown' aria-expanded='false')
+										| 請選擇預約課程
+									ul.dropdown-menu.dropdown-menu-dark.w-100.select-items(aria-labelledby='dropdownMenuButton2')
+										li
+											a.dropdown-item.active.select-all 無預約課程
+										li 
+											a.dropdown-item.select-1 頭部放鬆
+										li
+											a.dropdown-item.select-2 臉部美容
+										li
+											a.dropdown-item.select-3 身體保養
+										li
+											a.dropdown-item.select-4 腳底按摩
+										li 
+											a.dropdown-item.select-5 儀器放鬆療程
+									
+							.form-group.col-md-6.select-head
+								.dropdown
+									button#dropdownMenuButton2.btn.btn-secondary.dropdown-toggle.w-100.select-head(type='button' name='fy_headclass' data-bs-toggle='dropdown' aria-expanded='false')
+										| 請選擇頭部放鬆課程
+									ul.dropdown-menu.dropdown-menu-dark.w-100.select-head(aria-labelledby='dropdownMenuButton2')
+										li 
+											a.dropdown-item.active 顱內放鬆課程 【75分鐘】 / 5200元
+										li
+											a.dropdown-item 頭部撥筋課程 【60分鐘】 / 5200元
+										li
+											a.dropdown-item 頭部活氧熱活課程 【75分鐘】 / 5200元
+										li
+											a.dropdown-item 熱敷舒緩森髮課程 【75分鐘】 / 5200元
+							.form-group.col-md-6.select-face
+								.dropdown
+									button#dropdownMenuButton2.btn.btn-secondary.dropdown-toggle.w-100.select-face(type='button' name='fy_faceclass' data-bs-toggle='dropdown' aria-expanded='false')
+										| 請選擇臉部美容課程
+									ul.dropdown-menu.dropdown-menu-dark.w-100.select-face(aria-labelledby='dropdownMenuButton2')
+
+										li
+											a.dropdown-item.active 高效深層保濕課程 【90分鐘】 / 5200元
+										li
+											a.dropdown-item 清透美白課程  【80分鐘】 / 5200元	
+										li
+											a.dropdown-item 緊緻拉提課程  【80分鐘】 / 5200元
+										li
+											a.dropdown-item 美人深層護膚課程  【80分鐘】 / 5200元
+							.form-group.col-md-6.select-body
+								.dropdown
+									button#dropdownMenuButton2.btn.btn-secondary.dropdown-toggle.w-100.select-body(type='button' name='fy_bodyclass' data-bs-toggle='dropdown' aria-expanded='false')
+										| 請選擇身體保養課程
+									ul.dropdown-menu.dropdown-menu-dark.w-100.select-body(aria-labelledby='dropdownMenuButton2')
+										li
+											a.dropdown-item.active 香氛舒壓放鬆課程  【60分鐘】 / 5200元
+										li 
+											a.dropdown-item 女神纖體雕塑課程  【60分鐘】 / 5200元
+										li
+											a.dropdown-item 全方位滋養紓壓課程  【60分鐘】 / 5200元
+										li
+											a.dropdown-item 特殊保養課程 牛奶核桃去角質【60分鐘】 / 5200元
+							.form-group.col-md-6.select-foot
+								.dropdown
+									button#dropdownMenuButton2.btn.btn-secondary.dropdown-toggle.w-100.select-foot(type='button' name='fy_footclass' data-bs-toggle='dropdown' aria-expanded='false')
+										| 請選擇腳底按摩課程
+									ul.dropdown-menu.dropdown-menu-dark.w-100.select-foot(aria-labelledby='dropdownMenuButton2')
+										li
+											a.dropdown-item.active 東方古法腳底按摩課程  【60分鐘】 / 5200元
+										li
+											a.dropdown-item 手部柔潤呵護課程  【60分鐘】 / 5200元
+										li
+											a.dropdown-item 漫步輕盈足課程  【60分鐘】 / 5200元
+										li
+											a.dropdown-item 去角質護手課程  【60分鐘】 / 5200元
+							.form-group.col-md-6.select-space
+								.dropdown
+									button#dropdownMenuButton2.btn.btn-secondary.dropdown-toggle.w-100.select-space(type='button' name='fy_spaceclass' data-bs-toggle='dropdown' aria-expanded='false')
+										| 請選擇儀器放鬆療程
+									ul.dropdown-menu.dropdown-menu-dark.w-100.select-space(aria-labelledby='dropdownMenuButton2')
+										li
+											a.dropdown-item.active Sauna桑拿  【60分鐘】 / 5200元
+										li
+											a.dropdown-item Jacuzzi按摩浴缸  【60分鐘】 / 5200元
+										li
+											a.dropdown-item 岩盤浴  【60分鐘】 / 5200元
+										li
+											a.dropdown-item 太空艙  【60分鐘】 / 5200元			
+																				
+							.form-group.col-md-6
+								.dropdown
+									button#dropdownMenuButton2.btn.btn-secondary.dropdown-toggle.w-100.select-product(type='button' name='fy_product' data-bs-toggle='dropdown' aria-expanded='false')
+										| 請選擇購買商品
+									ul.dropdown-menu.dropdown-menu-dark.w-100.select-product(aria-labelledby='dropdownMenuButton2')
+										li
+											a.dropdown-item.active 無購買商品
+										li 精油
+											a.dropdown-item 沉靜舒眠複方精油 50ml / 5200元
+										li
+											a.dropdown-item 健康舒壓複方精油 50ml / 5200元
+										li
+											a.dropdown-item 青春柔嫩滋潤精油 50ml / 5200元
+										li
+											a.dropdown-item 思緒清晰醒神精油 50ml / 5200元
+										li 養生茶
+											a.dropdown-item 漢方草本養生茶 1盒20包/ 5200元
+										li
+											a.dropdown-item 枸杞菊花茶 1盒20包/ 5200元
+										li
+											a.dropdown-item 桂圓紅棗茶 1盒20包/ 5200元
+							.form-group.col-md-6
+								.dropdown
+									button#dropdownMenuButton2.btn.btn-secondary.dropdown-toggle.w-100.select-location(type='button' name='fy_location' data-bs-toggle='dropdown' aria-expanded='false')
+										| 請選擇服務據點
+									ul.dropdown-menu.dropdown-menu-dark.w-100.select-location(aria-labelledby='dropdownMenuButton2')
+										li 高雄店 
+											a.dropdown-item.active 804高雄市鼓山區忠義路9999號
+										li 台北店
+											a.dropdown-item 111台北市士林區菁山路101巷9999號
+							.form-group.col-md-6
+								.dropdown
+									button#dropdownMenuButton2.btn.btn-secondary.dropdown-toggle.w-100.select-master(type='button' name='fy_master' data-bs-toggle='dropdown' aria-expanded='false')
+										| 請選擇服務人員
+									ul.dropdown-menu.dropdown-menu-dark.w-100.select-master(aria-labelledby='dropdownMenuButton2')
+										li
+											a.dropdown-item.active 威爺 
+										li 
+											a.dropdown-item 施爺 
+										li
+											a.dropdown-item 愛爺 
+										li 
+											a.dropdown-item 懿妃
+										li 
+											a.dropdown-item 幼妃
+										li
+											a.dropdown-item 念妃 
+										li 
+											a.dropdown-item 驥妃 
+
+							.form-group.col-md-3
+								#datepicker.input-group.date
+									input#date.form-control(type='date' name='fy_date').text-light
+									span.input-group-append
+										//- i.fa-regular.fa-calendar-days
+
+							//- .col-md-6.form-group
+							//- 	input.form-control(type='date' name='fy_date' placeholder='dd/mm/yyyy' required='')
+							
+							.form-group.col-md-3
+								.dropdown
+									button#dropdownMenuButton2.btn.btn-secondary.dropdown-toggle.w-100.select-time(type='button' name='fy_time' data-bs-toggle='dropdown' aria-expanded='false')
+										| 請選擇預約時間
+									ul.dropdown-menu.dropdown-menu-dark.w-100.select-time(aria-labelledby='dropdownMenuButton2')
+										li 早上
+											a.dropdown-item.active 9:00
+										li 
+											a.dropdown-item 10:00
+										li 
+											a.dropdown-item 11:00
+										li 下午
+											a.dropdown-item 13:00
+										li 
+											a.dropdown-item 14:00
+										li 
+											a.dropdown-item 15:00
+										li 
+											a.dropdown-item 16:00
+										li 
+											a.dropdown-item 17:00
+										li 晚上
+											a.dropdown-item 19:00
+										li 
+											a.dropdown-item 20:00
+										li 
+											a.dropdown-item 21:00
+										li 
+											a.dropdown-item 22:00
+
+						.form-group.mt-3
+							textarea.form-control(name='message' rows='5' placeholder='備註' required='')
+						.my-3
+							.loading Loading
+							.error-message 發生未知錯誤，請重新送出表單，謝謝!
+							.sent-message 您的訊息已送出，謝謝
+						.text-center
+							button(type='submit' name="submit") 送出訊息
+
+
+
+
+

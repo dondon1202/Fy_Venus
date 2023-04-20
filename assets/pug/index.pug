@@ -1,0 +1,93 @@
+extends includes/base.pug
+
+block body
+	// ======= 輪播 =======
+	section#hero.hero.d-flex.flex-column.justify-content-center.align-items-center.mg-top-banner(data-aos='fade', data-aos-delay='500')
+		.container-fluid
+			.row.justify-content-center
+				.col-xl-8.col-lg-12.col-md-12.text-center
+					#carouselExampleIndicators.carousel.slide(data-bs-ride='carousel')
+						.carousel-indicators
+							button.active(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='0', aria-current='true', aria-label='Slide 1')
+							button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='1', aria-label='Slide 2')
+							button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='2', aria-label='Slide 3')
+						.carousel-inner
+							.carousel-item.active
+								picture
+									source(media='(max-width: 768px)', srcset='../img/banner03-xs.jpg')
+									source(media='(max-width: 564px)', srcset='../img/banner03-xs.jpg')
+									img.d-block.w-100(src='../img/banner03.jpg', alt='...')
+
+							.carousel-item
+								picture
+									source(media='(max-width: 768px)', srcset='../img/banner01-xs.jpg')
+									source(media='(max-width: 564px)', srcset='../img/banner01-xs.jpg')
+									img.d-block.w-100(src='../img/banner01.jpg', alt='...')
+							.carousel-item
+								picture
+									source(media='(max-width: 768px)', srcset='../img/banner02-xs.jpg')
+									source(media='(max-width: 564px)', srcset='../img/banner02-xs.jpg')
+									img.d-block.w-100(src='../img/banner02.jpg', alt='...')
+						button.carousel-control-prev(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide='prev')
+							span.carousel-control-prev-icon(aria-hidden='true')
+							span.visually-hidden Previous
+						button.carousel-control-next(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide='next')
+							span.carousel-control-next-icon(aria-hidden='true')
+							span.visually-hidden Next
+
+
+
+	main#main
+		// ======= 五感區塊 =======
+		section#gallery.gallery
+			.container-fluid
+				.row.gy-4.justify-content-center(data-aos='fade', data-aos-delay='400')
+					// 觸感區
+					.col-xl-12.col-lg-12.col-md-12.col-sm-12
+						.gallery-item.pic
+							h6 FY-VENUS
+							h5 五感極致享受
+					.col-xl-5.col-lg-5.col-md-6.col-sm-12
+						.gallery-item.pic
+							img.img-fluid(src='../img/touch-pic-1440x800.jpg', alt='')
+					.col-xl-3.col-lg-3.col-md-4.col-sm-12
+						.gallery-item.word
+							img.img-fluid(src='../img/touch-word.png', alt='')
+				.mgt
+					.row.gy-4.justify-content-center(data-aos='fade', data-aos-delay='400')
+						// 聽覺區
+						.col-xl-3.col-lg-3.col-md-4.col-sm-12.order-xs-2
+							.gallery-item.word
+								img.img-fluid(src='../img/listen-word.png', alt='')
+						.col-xl-5.col-lg-5.col-md-6.col-sm-12.order-xs-1
+							.gallery-item.pic
+								img.img-fluid(src='../img/listen-pic1440x800.jpg', alt='')
+				.mgt
+					.row.gy-4.justify-content-center(data-aos='fade', data-aos-delay='400')
+						// 視感區
+						.col-xl-5.col-lg-5.col-md-6.col-sm-12
+							.gallery-item.pic
+								img.img-fluid(src='../img/view-pic-1440x800.jpg', alt='')
+						.col-xl-3.col-lg-3.col-md-4.col-sm-12
+							.gallery-item.word
+								img.img-fluid(src='../img/view-word.png', alt='')
+				.mgt
+					.row.gy-4.justify-content-center(data-aos='fade', data-aos-delay='400')
+						// 嗅覺區
+						.col-xl-3.col-lg-3.col-md-4.col-sm-12
+							.gallery-item.word
+								img.img-fluid(src='../img/smell-word.png', alt='')
+						.col-xl-5.col-lg-5.col-md-6.col-sm-12
+							.gallery-item.pic
+								img.img-fluid(src='../img/smell-pic1440x800.jpg', alt='')
+				.mgt
+					.row.gy-4.justify-content-center(data-aos='fade', data-aos-delay='400')
+						// 味感區
+						.col-xl-5.col-lg-5.col-md-6.col-sm-12
+							.gallery-item.pic
+								img.img-fluid(src='../img/taste-pic-1440X800.jpg', alt='')
+						.col-xl-3.col-lg-3.col-md-4.col-sm-12
+							.gallery-item.word
+								img.img-fluid(src='../img/taste-word.png', alt='')
+			
+

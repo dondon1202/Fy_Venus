@@ -1,0 +1,980 @@
+/* 通用設定 */
+.m0-auto{
+    margin: 0 auto;
+}
+
+
+
+/* BODY背景圖片 */
+body{
+    background-image: url("../img/bg-2.jpg");
+    background-size: 100%;
+    background-position: center;
+    -webkit-background-attachment: fixed;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+                    /* ~~~~~導覽列區塊修改~~~~~*/
+.header{
+    padding: 0px;
+    background-color: #000000ab;
+}
+
+.header .logo img{
+    max-height: 130px;
+}
+
+.header .header-social-links a{
+    font-size: 25px;
+    margin: 0px 10px;
+}
+.header .header-social-links a:hover {
+    color: #FCF4B1;
+}
+
+/* 選單一層 */
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover>a{
+    color: #FCF4B1;
+}
+.navbar a, .navbar a:focus{
+    font-size: 18px;
+}
+.navbar a, .navbar a:focus{
+    padding: 10px 25px;
+}
+/* 選單二層 */
+.navbar .dropdown ul a{
+    font-size: 17px;
+    
+}
+.navbar .dropdown ul a:hover{
+    margin-left: 5px;
+}
+/* FB TWITTER */
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover>a{
+    color: #FCF4B1;
+}
+
+/* 分隔線設計 */
+span.line{
+    border-left: 1px solid #F5DF19 ;
+    padding: 10px 0px;
+    margin: 5px;
+}
+
+
+                    /* ~~~~~頁尾~~~~~ */
+.footer{
+    border-top: none ;
+}
+.footer.other{
+    margin-top: -50px;
+}
+.footer .credits a {
+    color:#f7ff78
+}
+.foot-corner{
+    background-image: url("../img/corner-down.png");
+    background-size: cover;
+    padding: 40px 0px 70px 0px;
+}
+
+
+
+
+
+                    /* ~~~~~首頁~~~~~ */
+
+/* 輪播區塊 */
+.hero{
+    background-color: transparent;
+    padding: 40px 0px;
+}
+
+.mg-top-banner{
+    margin-top: 185px;
+}
+
+.gallery-item.pic h5,h6{
+    display: none;
+}
+
+.gallery-item.pic h5::before{
+    /* display: none; */
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #5bd9a9;
+    margin: 10px;
+}
+
+.gallery-item.pic h5::after{
+    /* display: none; */
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #5bd9a9;
+    margin: 10px;
+}
+
+.gallery-item.pic h5
+/* 五感區 */
+.row.gy-4.justify-content-center{
+    overflow: hidden;
+}
+.gallery{
+    padding-bottom: 20px;
+}
+.gallery .gallery-item{
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+}
+.gallery-item img{
+    width: 100%;
+    height: 100%;
+} 
+.gallery .gallery-item:hover img {
+    transform: scale(1.05);
+  }
+
+.mgt{
+    margin-top: 25px;
+}
+
+
+
+                    /* ~~~~~分頁關於我們~~~~~*/
+
+/* 上下角落*/
+.box.top{
+    margin: 200px auto 0px auto;
+    width: 88%;
+}
+.box.down{
+    width: 88%;
+    margin: -100px auto 0px auto;
+}
+
+
+/* 背景LOGO*/
+.logo-bg{
+    margin-top: 165px;
+    padding: 50px 0px 0px 0px;
+}
+.logo-bg h2{
+    font-size: 40px;
+    margin: 0px 0px -110px 0px; 
+    /* background-image: url("../img/corner-up.png"); */
+    background-size: cover;
+    padding: 55px 0px;
+}
+.logo-bg .p-box{
+    padding: 90px 160px;
+    background-image: url("../img/LOGO-20.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 750px 750px;
+}
+.logo-bg p{
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+
+                    /* ~~~~~分頁模板~~~~~ */
+/* 分頁第一區塊大圖語文字圖片設定 */
+.banner-head{
+    background: url("../img/head-lg.png") no-repeat center top;
+}
+.banner-face{
+    background: url("../img/face-lg.png") no-repeat center top;
+}
+.banner-body{
+    background: url("../img/body-lg.png") no-repeat center top;
+}
+.banner-foot{
+    background: url("../img/foot-lg.png") no-repeat center top;
+}
+.banner-space{
+    background: url("../img/space-lg.png") no-repeat center top;
+}
+.banner-oil{
+    background: url("../img/oil-lg.png") no-repeat center top;
+}
+.banner-tea{
+    background: url("../img/tea-lg.png") no-repeat center top;
+}
+.banner-news{
+    background: url("../img/news-lg.png") no-repeat center top;
+}
+
+/* 通用設定 */
+.banner {
+    overflow: hidden;
+    box-shadow:  8px 8px 1px #F2D9BF;
+    margin-top: 200px;
+    position: relative;
+    padding: 100px 0 320px;
+    background-size: 100% 100%;
+}
+.text {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 45%;
+}
+.text-2 {
+    display: none;
+}
+img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* 課程卡片 */
+section.services {
+    margin-top: 80px;
+}
+.services .service-item{
+    padding: 50px 30px 25px 30px;
+}
+.service-item.position-relative {
+    overflow: hidden;
+    box-shadow: 5px 5px 1px #F2D9BF;
+    transition: all 0.9s ease-in-out;
+    border-radius: 0px 0px 40px 0px;
+} 
+.service-item.position-relative img {
+    transition: all 0.9s ease-in-out;
+    margin-bottom: 10px;
+}
+.service-item.position-relative:hover img{
+    transform: scale(1.2) rotate(3deg);
+    opacity: 0.8;
+}
+
+.services .service-item:hover h4 a {
+    color: #e8db66!important;
+}
+.services .service-item:hover h4 a, .services .service-item p{
+    color: white;
+}
+.card-pic {
+    overflow: hidden;
+  }
+.card-body{
+    color: white;
+    height: 220px;
+
+}
+.card-body h4, .services .service-item h4 a{
+    color: #FAF2B0;
+    transition: all .5s;
+}
+/* 時數 */
+.minute{
+    text-align: right;
+    font-size: 17px;
+    margin-top: 10px;
+}
+/* 價格 */
+.price{
+    text-align: center;
+    font-size: 17px;
+    margin: 20px 0px 0px 0px; 
+    position: absolute;
+    bottom: 75px;
+}
+/* 按鈕 */
+.button{
+    margin-top: 30px;
+  }
+.btn.btn-danger.btn-sm {
+    padding: 5px 20px;
+}
+
+
+
+
+
+
+/* 團隊成員區塊 */
+p.vocational{
+    font-size: 20px;
+    font-weight: 600;
+}
+.section-header p::before{
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #5bd9a9;
+    margin: 10px;
+}
+.section-header p::after{
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #5bd9a9;
+    margin: 10px;
+}
+/* 文字對齊中間 */
+.section-header{
+    text-align: center;
+}
+
+
+  
+.page-header h2{
+    margin-top: 100px;
+}
+
+.dropdown-toggle::after{
+    position: absolute;
+    right: 3%;
+    top: 45%;
+}
+
+#inlineRadio1, #inlineRadio2{
+    display: flex;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+
+}
+.sex{
+    display: flex;
+    align-items: center;
+}
+button.dropdown-toggle.w-100{
+    background-color: #161718;
+    height: 44px;
+    text-align: left;
+    border: 1px solid #a6ed76    ;
+}
+
+.form-control, .form-check-input{
+    border: 1px solid #a6ed76   ;
+}
+
+
+.dropdown-menu{
+    background-color: #161718;
+}
+.dropdown-menu li{
+    /* font-size: 18px; */
+    margin-left: 10px;
+    color: #ffff76;
+}
+
+i.fa-regular.fa-calendar-days{
+    position: absolute;
+    top: 30%;
+    right: 3%;
+}
+
+
+
+
+
+
+
+/* 媒體查詢 */
+
+
+
+
+@media (max-width: 1439px) {
+
+
+    .banner-head{
+        background: url("../img/head-lg.png") no-repeat center top;
+    }
+    .banner-face{
+        background: url("../img/face-lg.png") no-repeat center top;
+    }
+    .banner-body{
+        background: url("../img/body-lg.png") no-repeat center top;
+    }
+    .banner-foot{
+        background: url("../img/foot-lg.png") no-repeat center top;
+    }
+    .banner-space{
+        background: url("../img/space-lg.png") no-repeat center top;
+    }
+    .banner-oil{
+        background: url("../img/oil-lg.png") no-repeat center top;
+    }
+    .banner-tea{
+        background: url("../img/tea-lg.png") no-repeat center top;
+    }
+    .banner-news{
+        background: url("../img/news-lg.png") no-repeat center top;
+    }
+    .banner {
+      box-shadow: inset 0px -3px 5px 0px #F2D9BF;
+      position: relative;
+      padding: 100px 0 200px;
+      padding: 100px 0;
+      background-size: cover;
+    }
+    .gallery-item.pic h2{
+        display: none;
+    }
+    .text {
+      width: 100%;
+      position: relative;
+      top: inherit;
+      right: -25%;
+      padding: 0;
+    }
+    .card-body{
+      height: 250px;
+    }
+
+
+    .header .header-social-links a{
+        margin: 5px 10px;
+    }
+}
+
+
+@media (max-width: 1279px){
+    .mobile-nav-show {
+        margin: 0px 18px 0 10px;
+    }
+    span.line{
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .banner-head{
+        background: url("../img/head-lg.png") no-repeat center top;
+    }
+    .banner-face{
+        background: url("../img/face-lg.png") no-repeat center top;
+    }
+    .banner-body{
+        background: url("../img/body-lg.png") no-repeat center top;
+    }
+    .banner-foot{
+        background: url("../img/foot-lg.png") no-repeat center top;
+    }
+    .banner-space{
+        background: url("../img/space-lg.png") no-repeat center top;
+    }
+    .banner-oil{
+        background: url("../img/oil-lg.png") no-repeat center top;
+    }
+    .banner-tea{
+        background: url("../img/tea-lg.png") no-repeat center top;
+    }
+    .banner-news{
+        background: url("../img/news-lg.png") no-repeat center top;
+    }
+
+    .banner {
+      box-shadow: inset 0px -3px 5px 0px #F2D9BF;
+      position: relative;
+      padding: 100px 0 200px;
+      padding: 120px 0;
+      background-size: cover;
+    }
+
+    .testimonials .testimonial-item .testimonial-img {
+        width: 20%;
+ 
+      }
+    .gallery-item.pic h5, h6{
+        display: none;
+    }
+    .text {
+      width: 100%;
+      position: relative;
+      top: inherit;
+      right: -22%;
+      padding: 0;
+    }
+    .card {
+      padding: 0px;
+      margin: 30px 0px;
+    }
+    .card-body{
+      height: 200px;
+    }
+    .card{
+        border-radius: 50px 0px 50px 0px;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 991px) {
+
+
+    .banner-head{
+        background: url("../img/head-xs.png") no-repeat center top;
+    }
+    .banner-face{
+        background: url("../img/face-xs.png") no-repeat center top;
+    }
+    .banner-body{
+        background: url("../img/body-xs.png") no-repeat center top;
+    }
+    .banner-foot{
+        background: url("../img/foot-xs.png") no-repeat center top;
+    }
+    .banner-space{
+        background: url("../img/space-xs.png") no-repeat center top;
+    }
+    .banner-oil{
+        background: url("../img/oil-xs.png") no-repeat center top;
+    }
+    .banner-tea{
+        background: url("../img/tea-xs.png") no-repeat center top;
+    }
+    .banner-news{
+        background: url("../img/news-xs.png") no-repeat center top;
+    }
+    .banner {
+      box-shadow: inset 0px -3px 5px 0px #F2D9BF;
+      position: relative;
+      padding: 120px 0;
+      background-size: cover;
+    }
+
+
+    .gallery-item.pic h5, h6{
+        display: none;
+    }
+    .text {
+      width: 100%;
+      position: relative;
+      top: inherit;
+      right: -18%;
+      padding: 0;
+
+    }
+
+    .text {
+        width: 100%;
+        position: relative;
+        top: inherit;
+        right: inherit;
+        padding: 0;
+        display: none;
+      }
+      .text-2 {
+        display: block;
+        margin-top: 50px;
+      }
+    
+    .card{
+        border-radius: 50px 0px 50px 0px;
+    }
+    .btn.btn-danger.btn-sm {
+        width: 75%;
+        padding: 10px 0px;
+    }
+    .card-text.price{
+        margin: 20px 0px -10px 0px;
+    }
+
+    .card-text, .card-title {
+        padding: 5px;
+      }
+
+      .btn.btn-danger.btn-sm {
+        /* width: 90%; */
+        padding: 10px 0px;
+    }
+
+    
+    .testimonials .testimonial-item .testimonial-img {
+        width: 35%;
+ 
+      }
+  }
+
+
+@media (max-width: 768px) {
+
+    .col-xl-3.col-lg-3{
+        display: none;
+    }
+    .gallery{
+        width: 90%;
+        height: 90%;
+        margin: 0 auto;
+    }
+    .carousel.slide{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .carousel-control-next, .carousel-control-prev{
+        display: none;
+    }
+    .g-4, .gy-4 {
+        --bs-gutter-y: 1rem;
+    }
+    .header .header-social-links a{
+        margin: 10px 0px;
+        font-size: 20px;
+        max-height: 130px;
+    }
+    
+    #footer.footer{
+        padding: -10px 15px 20px 15px;
+    }
+
+    .banner-head{
+        background: url("../img/head-xs.png") no-repeat center top;
+    }
+    .banner-face{
+        background: url("../img/face-xs.png") no-repeat center top;
+    }
+    .banner-body{
+        background: url("../img/body-xs.png") no-repeat center top;
+    }
+    .banner-foot{
+        background: url("../img/foot-xs.png") no-repeat center top;
+    }
+    .banner-space{
+        background: url("../img/space-xs.png") no-repeat center top;
+    }
+    .banner-oil{
+        background: url("../img/oil-xs.png") no-repeat center top;
+    }
+    .banner-tea{
+        background: url("../img/tea-xs.png") no-repeat center top;
+    }
+    .banner-news{
+        background: url("../img/news-xs.png") no-repeat center top;
+    }
+
+        .banner {
+          box-shadow: inset 0px -3px 5px 0px #F2D9BF;
+          position: relative;
+          padding: 170px 0;
+          background-size: cover;
+        }
+
+        .text {
+          width: 100%;
+          position: relative;
+          top: inherit;
+          right: inherit;
+          padding: 0;
+          display: none;
+        }
+        .text-2 {
+          display: block;
+          margin-top: 50px;
+        }
+        .card-body{
+            height: 170px;
+        }
+        .card{
+            border-radius: 50px 0px 50px 0px;
+        }
+        .card-text.price{
+            margin: 25px 0px 0px 0px;
+        }
+        .btn.btn-danger.btn-sm {
+            width: 90%;
+            padding: 10px 0px;
+        }
+
+        .gallery-item.pic h6{
+            display: block;
+            text-align: center;
+            /* margin: 40px; */
+            letter-spacing: 2px;
+            opacity: 0.8;
+        }
+        .gallery-item.pic h5{
+            display: block;
+            text-align: center;
+            margin: 0px 40px 40px 40px;
+        }
+        .gallery-item.pic h5::before{
+            content: "";
+            width: 60px;
+            height: 1px;
+            display: inline-block;
+            background: #5bd9a9;
+            margin: 10px;
+        }
+        
+        .gallery-item.pic h5::after{
+            content: "";
+            width: 60px;
+            height: 1px;
+            display: inline-block;
+            background: #5bd9a9;
+            margin: 10px;
+        }
+    
+
+} 
+
+
+
+
+
+@media (max-width: 576px) {
+
+
+    body{
+
+        -webkit-background-attachment: fixed;
+        background-attachment: fixed;
+ 
+    }
+    .header .logo img{
+        max-height: 100px;
+    }
+    .header .header-social-links a{
+        margin: 5px;
+    }
+    .gallery-item.pic img{
+        height: 100%;
+    }
+    .gallery-item.word{
+        text-align: center;
+    }
+    .col-xl-3.col-lg-3{
+        display: none;
+    }
+    .hero{
+        padding: 25px 0px;
+    }
+    .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover>a{
+        color: #FCF4B1;
+    }
+    .navbar a, .navbar a:focus{
+        font-size: 17px;
+    }
+    .navbar .dropdown ul a:hover{
+        margin-left: 5px;
+    }
+    .header .header-social-links{
+        padding-right: 0px;
+    }
+    .header-social-links{
+        text-align: center;
+    }
+    .header .header-social-links a{
+        font-size: 18px;
+    }
+    .carousel-control-next, .carousel-control-prev{
+        display: none;
+    }
+    .footer{
+        margin-top: 0px;
+    }
+    .footer .credits a {
+        olor:#f7ff78
+    }
+    #footer.footer{
+        padding: 30px 15px;
+    }
+    .box.top{
+        margin-top: 140px;
+    }
+    .box.down{
+        margin-top: -50px;
+    }
+
+    .logo-bg h2{
+        font-size: 28px;
+        margin: 90px 0px 50px 0px; 
+        padding: 13px 0px;
+    }
+    .logo-bg .p-box{
+        padding: 0px;
+        background-size: 400px 400px;   
+    }
+    .logo-bg p{
+        font-size: 17px;
+        margin-top: 40px;
+        text-align: left;
+        padding: 0px 15px;
+    }
+    .logo-bg{
+        padding: 40px 15px;
+        background-size: 500px 500px;
+        margin-top: 0px;
+    }
+    .foot-corner{
+        background-image: url("../img/corner-down.png");
+        background-size: cover;
+        padding: 7px 0px;
+    }
+
+
+
+    .banner-head{
+        background: url("../img/head-xs.png") no-repeat center top;
+    }
+    .banner-face{
+        background: url("../img/face-xs.png") no-repeat center top;
+    }
+    .banner-body{
+        background: url("../img/body-xs.png") no-repeat center top;
+    }
+    .banner-foot{
+        background: url("../img/foot-xs.png") no-repeat center top;
+    }
+    .banner-space{
+        background: url("../img/space-xs.png") no-repeat center top;
+    }
+    .banner-oil{
+        background: url("../img/oil-xs.png") no-repeat center top;
+    }
+    .banner-tea{
+        background: url("../img/tea-xs.png") no-repeat center top;
+    }
+    .banner-news{
+        background: url("../img/news-xs.png") no-repeat center top;
+    }
+
+
+
+    .banner {
+        box-shadow: inset 0px -3px 5px 0px #F2D9BF;
+        position: relative;
+        padding: 130px 0;
+        background-size: cover;
+    }
+    .text {
+        width: 100%;
+        position: relative;
+        top: inherit;
+        right: inherit;
+        padding: 0;
+    }
+    .text-2 {
+        margin-top: 50px;
+    }
+    .card {
+        margin: 20px 0px;
+        width: 85%;
+        margin: 0 auto;
+        border-radius: 40px 0px 20px 0px;
+    }
+    .card-text.price{
+        margin: 25px 0px 0px 0px;
+    }
+    .mgt{
+        margin-top: 25px;
+    }
+    .btn.btn-danger.btn-sm {
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+
+
+
+
+
+    .gallery-item.pic h5{
+        display: block;
+        text-align: center;
+        margin: 20px;
+    }
+    .gallery-item.pic h5::before{
+        content: "";
+        width: 60px;
+        height: 1px;
+        display: inline-block;
+        background: #5bd9a9;
+        margin: 10px;
+    }
+    
+    .gallery-item.pic h5::after{
+        content: "";
+        width: 60px;
+        height: 1px;
+        display: inline-block;
+        background: #5bd9a9;
+        margin: 10px;
+    }
+
+/* 團隊成員區塊 */
+    .section-header p::before{
+        content: "";
+        width: 80px;
+        height: 1px;
+        display: inline-block;
+        background: #5bd9a9;
+        margin: 10px 20px;
+    }
+    .section-header p::after{
+        content: "";
+        width: 80px;
+        height: 1px;
+        display: inline-block;
+        background: #5bd9a9;
+        margin: 10px 20px;
+
+    }
+
+    .col-lg-6.text-center{
+        margin-top: -50px;
+
+    }
+    .col-lg-6.text-center p{
+        letter-spacing: 1px;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .row.gy-4.justify-content-center.icon{
+        margin: -60px 0px 50px 0px;
+    }
+
+    
+
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+ 
